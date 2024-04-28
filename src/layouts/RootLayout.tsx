@@ -4,13 +4,13 @@ import { Outlet } from "react-router-dom";
 
 function RootLayout() {
     return (
-        <div>
-            <div><Header /></div>
+        <>
+            <Header />
             <main>
                 <Outlet />
             </main>
-            <div><Footer /></div>
-        </div>
+            <Footer />
+        </>
     )
 }
 

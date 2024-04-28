@@ -14,30 +14,6 @@
 
 /* NAV STYLES */
 
-
-/*nav {
-    background-color: transparent;
-    box-shadow: none;
-    position: relative;
-    transform: unset;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-}
-
-nav li {
-    margin-bottom: 0;
-    padding-bottom: 9px;
-}
-
-nav a {
-    opacity: 1;
-    position: relative;
-}*/
-
 nav a::before,
 nav a.active::before {
     background: var(--green-light);

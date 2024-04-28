@@ -39,7 +39,7 @@ const getYear = () => {
 function Footer() {
     return (
         <>
-            <footer className="bg-gradient-to-t from-gradientDarkGreen from-60% to-gradientLightGreen text-center text-sm pt-8 pb-10 mt-28 text-white">
+            <footer className="bg-gradient-to-t from-gradientDarkGreen from-60% to-gradientLightGreen text-center text-sm pt-[30px] pb-10 mt-28 text-white">
                 <div className="mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1200px]">
                         <ul className="mt-2.5 md:mt-0 md:flex md:justify-between text-center">
                             {navItems.map(navItem => <li key={navItem.name} className="my-2.5">
@@ -48,7 +48,7 @@ function Footer() {
                         <p className="py-6">
                             Copyright &copy; WF Recycle-Tech {getYear()}
                         </p>
-                        <div>
+                        <div className="mt-1 mb-4">
                             <Link to="/"><img src={wfLogoFooter} alt="WF Recycle-Tech" className="max-w-full h-auto inline-block" /></Link>
                         </div>
                 </div>
