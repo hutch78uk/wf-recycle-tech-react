@@ -1,3 +1,89 @@
+:root {
+    --green-dark: rgba(10, 110, 20, 1);
+    --green-medium: rgba(82, 164, 19, 1);
+    --green-light: rgba(110, 192, 20, 1);
+    --grey-777: rgba(119, 119, 119, 1);
+    --grey-666: rgba(102, 102, 102, 1);
+    --grey-light: rgba(227, 226, 217, 1);
+    --grey-light-hover: rgba(218, 217, 205, 1);
+    --grey-text: rgba(114, 127, 131, 1);
+    --kaki: rgba(153, 153, 102, 1);
+    --red-dark: rgba(178, 0, 0, 1);
+}
+
+
+/* NAV STYLES */
+
+
+/*nav {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    transform: unset;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 0;
+    padding-bottom: 9px;
+}
+
+nav a {
+    opacity: 1;
+    position: relative;
+}*/
+
+nav a::before,
+nav a.active::before {
+    background: var(--green-light);
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 1.8em;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    transform: scale(1);
+}
+
+nav a.active::before {
+    transform: unset;
+}
+
+nav a.active {
+    color: var(--green-light);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .navburger {
+        @apply bg-gray777 rounded-sm block relative w-8 h-[3px];
+    }
+    .navburger::before {
+        @apply bg-gray777 rounded-sm block absolute bottom-2 content-[''] h-[3px] w-8;
+    }
+    .navburger::after {
+        @apply bg-gray777 rounded-sm block absolute top-2 content-[''] h-[3px] w-8;
+    }
+    .closeBtn {
+        @apply absolute right-[2px] w-[32px] h-[32px] opacity-100;
+    }
+    .closeBtn::before {
+        @apply absolute content-[''] left-[15px] h-[33px] w-[2px] bg-[#333] rotate-45;
+    }
+    .closeBtn::after {
+        @apply absolute content-[''] left-[15px] h-[33px] w-[2px] bg-[#333] -rotate-45;
+    }
+}

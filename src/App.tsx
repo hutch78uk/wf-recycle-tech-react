@@ -10,6 +10,10 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import NotFound from './pages/NotFound';
 
+// Blog articles
+import BlogArticle from './pages/news-articles/BlogArticle';
+import BlogArticle2 from './pages/news-articles/BlogArticle2';
+
 // layouts
 import RootLayout from "./layouts/RootLayout";
 
@@ -22,6 +26,8 @@ const router = createBrowserRouter(
       <Route path="our-value" element={<OurValue />} /> 
       <Route path="about-us" element={<AboutUs />} />
       <Route path="news" element={<News />} />
+      <Route path="blog/blog-1" element={<BlogArticle />} />
+      <Route path="blog/blog-2" element={<BlogArticle2 />} />
       <Route path="contact-us" element={<ContactUs />} /> 
       // Catch all 404 route
       <Route path="*" element={<NotFound />}/>
