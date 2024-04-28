@@ -13,6 +13,8 @@ export default {
                 wfGreenDark: '#0A6E14',
                 wfGreenMed: '#52A413',
                 wfGreenLight: '#6EC014',
+                gradientLightGreen: '#57A41A',
+                gradientDarkGreen: '#237A20',
                 gray777: '#777777',
                 gray666: '#666666',
                 grayLight: '#E3E2D9',

@@ -30,7 +30,7 @@ const navItems = [
         name: 'Contact Us',
         path: 'contact-us'
     }
-]
+];
 
 function Navigation() {
     let [open,setOpen]=useState(false);
