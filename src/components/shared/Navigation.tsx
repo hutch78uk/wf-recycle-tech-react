@@ -1,38 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const navItems = [
-    {
-        name: 'Home',
-        path: '/'
-    },
-    {
-        name: 'WF System',
-        path: 'wf-system'
-    },
-    {
-        name: 'Sustainability',
-        path: 'sustainability'
-    },
-    {
-        name: 'Our Value',
-        path: 'our-value'
-    },
-    {
-        name: 'About Us',
-        path: 'about-us'
-    },
-    {
-        name: 'News',
-        path: 'news'
-    },
-    {
-        name: 'Contact Us',
-        path: 'contact-us'
-    }
-];
+// Define the type for the navItems prop
+type NavItem = {
+    name: string;
+    path: string;
+}
+// Define the type for the props object received by the Footer component
+type NavProps = {
+    navItems: NavItem[];
+}
 
-function Navigation() {
+const Navigation: React.FC<NavProps> = ({ navItems }) => {
     let [open,setOpen]=useState(false);
 
     return (
@@ -46,12 +25,18 @@ function Navigation() {
                     shadow-[0_5px_5px_rgba(0,0,0,0.1)] md:shadow-none absolute md:relative 
                     transition-all duration-500 ease-in md:top-0 ${open ? 'top-0':'top-[-380px]'}`}>
                     <ul className="mt-2.5 md:mt-0 md:flex md:justify-between text-center">
-                        {navItems.map(navItem => <li key={navItem.name} className=
-                        "mb-2.5 last-of-type:mb-0 md:mb-0 pb-2.5 border-b border-white last-of-type:border-none text-gray666 hover:text-wfGreenLight">
-                            <NavLink onClick={()=>setOpen(!open)} className={'relative opacity-100'} to={navItem.path}>{navItem.name}</NavLink></li>)}
+                        {navItems.map((item, index) => (
+                            <li key={index} className=
+                            "mb-2.5 last-of-type:mb-0 md:mb-0 pb-2.5 border-b border-white last-of-type:border-none text-gray666 hover:text-wfGreenLight">
+                                <NavLink onClick={()=>setOpen(!open)} className={'relative opacity-100'} to={item.path}>{item.name}</NavLink>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>
+            
+            
+            
             
             
         </>
