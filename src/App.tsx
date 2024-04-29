@@ -8,6 +8,8 @@ import OurValue from './pages/OurValue';
 import News from './pages/News';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import Terms from './pages/Terms';
+import Privacy from './pages/Pivacy';
 import NotFound from './pages/NotFound';
 
 // Blog articles
@@ -29,6 +31,8 @@ const router = createBrowserRouter(
       <Route path="blog/blog-1" element={<BlogArticle />} />
       <Route path="blog/blog-2" element={<BlogArticle2 />} />
       <Route path="contact-us" element={<ContactUs />} /> 
+      <Route path="terms" element={<Terms />} />
+      <Route path="privacy" element={<Privacy />} />
       // Catch all 404 route
       <Route path="*" element={<NotFound />}/>
     </Route>
