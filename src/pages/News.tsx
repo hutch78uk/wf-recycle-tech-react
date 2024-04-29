@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function News() {
+    document.title = "WF Recycle-Tech - News";
     return (
         <>
             <p>News Page</p>
