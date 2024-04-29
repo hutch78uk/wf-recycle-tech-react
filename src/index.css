@@ -44,6 +44,9 @@ nav a.active {
 @tailwind components;
 @tailwind utilities;
 @layer components {
+    p {
+        @apply text-gray666;
+    }
     .navburger {
         @apply bg-gray777 rounded-sm block relative w-8 h-[3px];
     }
@@ -61,5 +64,8 @@ nav a.active {
     }
     .closeBtn::after {
         @apply absolute content-[''] left-[15px] h-[33px] w-[2px] bg-[#333] -rotate-45;
+    }
+    .section {
+        @apply w-full px-[15px] mx-auto my-[60px];
     }
 }

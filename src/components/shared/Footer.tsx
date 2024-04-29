@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
                                 </li>
                             ))}
                         </ul>
-                        <p className="py-6">
+                        <p className="py-6 text-white">
                             Copyright &copy; WF Recycle-Tech {getYear()}
                         </p>
                         <div className="mt-1 mb-4">
