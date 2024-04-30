@@ -44,6 +44,10 @@ nav a.active {
 @tailwind components;
 @tailwind utilities;
 @layer components {
+    h1.h2 {
+        @apply text-center text-gray777 mt-2.5 mb-[30px] text-[1.75rem] md:text-[2.125rem] leading-9 md:leading-10;
+    }
+    
     p {
         @apply text-gray666;
     }
