@@ -9,7 +9,7 @@ const OurValue = () => {
     return (
         <>
             <section className="section">
-                <div className="mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1200px]">
+                <div className="content-container">
                     <h1 className="h2">Experienced Engineering Team</h1>
                     <p className="text-gray666">One of WF Recycle-Tech&apos;s key sources of added value is through its reliable engineering partners 
                         Farrel Pomini, one of the world&apos;s leading providers of continuous compounding systems with over 100 years&apos; 
@@ -32,7 +32,7 @@ const OurValue = () => {
                 </div>
             </section>
             <section className="section bg-grayLight py-[30px]">
-                <div className="mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1200px]">
+                <div className="content-container">
                     <h1 className="h2">Experienced Engineering Team</h1>
                     <div className="md:grid grid-cols-2 gap-4 mt-5">
                         <div>
@@ -47,7 +47,7 @@ const OurValue = () => {
                 </div>
             </section>
             <section className="section">
-                <div className="mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1200px]">
+                <div className="content-container">
                     <h1 className="h2">Unique Patented Process</h1>
                     <div className="md:grid grid-cols-2 gap-4 mt-5">
                         <div>
@@ -64,7 +64,7 @@ const OurValue = () => {
                 </div>
             </section>
             <section className="section bg-grayLight py-[30px]">
-                <div className="mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[1200px]">
+                <div className="content-container">
                     <h1 className="h2">Continuous & Efficient Operation</h1>
                     <div className="md:grid grid-cols-2 gap-4 mt-5">
                         <div>
