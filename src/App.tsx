@@ -1,50 +1,26 @@
-import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-
-// pages
-import HomePage from "./pages/HomePage";
-import WfSystem from "./pages/WfSystem";
-import Sustainability from './pages/Sustainability';
-import OurValue from './pages/OurValue';
-import News from './pages/News';
-import AboutUs from './pages/AboutUs';
-import ContactUs from './pages/ContactUs';
-import Terms from './pages/Terms';
-import Privacy from './pages/Pivacy';
-import NotFound from './pages/NotFound';
-
-// Blog articles
-import BlogArticle from './pages/news-articles/BlogArticle';
-import BlogArticle2 from './pages/news-articles/BlogArticle2';
-
-// layouts
-import RootLayout from "./layouts/RootLayout";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<HomePage />} /> 
-      <Route path="wf-system" element={<WfSystem />} /> 
-      <Route path="sustainability" element={<Sustainability />} />
-      <Route path="our-value" element={<OurValue />} /> 
-      <Route path="about-us" element={<AboutUs />} />
-      <Route path="news" element={<News />} />
-      <Route path="blog/blog-1" element={<BlogArticle />} />
-      <Route path="blog/blog-2" element={<BlogArticle2 />} />
-      <Route path="contact-us" element={<ContactUs />} /> 
-      <Route path="terms" element={<Terms />} />
-      <Route path="privacy" element={<Privacy />} />
-      // Catch all 404 route
-      <Route path="*" element={<NotFound />}/>
-    </Route>
-
-    
-  )
-)
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <RouterProvider router={router} />
-  ); 
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
